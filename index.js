@@ -25,7 +25,7 @@ fetch('https://api.github.com/user/repos', {
 }).then(res => res.json()).then(json => console.log(json));
   return ''
 
-  const token = 'YOUR_TOKEN_HERE';
+  
 const postData = {
   body: 'Great stuff'
 };
