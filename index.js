@@ -47,7 +47,7 @@ function forkRepo() {
   //use fetch to fork it!
   fetch(`https://api.github.com/repos/${repo}/forks`, {
   method: 'POST',
-  body: JSON.stringify(postData),
+  
   headers: {
     Authorization: `token ${token}`
   }
