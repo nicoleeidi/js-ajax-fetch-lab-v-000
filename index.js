@@ -13,7 +13,7 @@ function getIssues(data) {
 }
 
 function showIssue(issue) {
-element= `<li>title: ,body:</li>`//what goes here?)
+element= `<li>title:${issue}.title ,body:${issue}.body</li>`//what goes here?)
   $('#issues').append(element)
 }
 
