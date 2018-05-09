@@ -14,8 +14,8 @@ function getIssues(data) {
 }
 
 function showIssue(issue) {
-
-  $('#issues').append( )
+issue= document.createElement()
+  $('#issues').append(issue)
 }
 
 function createIssue() {
