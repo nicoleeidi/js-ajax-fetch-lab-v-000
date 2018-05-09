@@ -11,7 +11,8 @@ function getIssues(data) {
     })
 }
 
-function showIssues(json) {
+function displayIssue(issue) {
+  $('#issues').append(issue.template())
 }
 
 function createIssue() {
