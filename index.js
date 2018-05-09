@@ -1,7 +1,7 @@
 const userName = ''
 
 function getIssues(data) {
-  fetch(`https://api.github.com/repos/learn-co-curriculum/javascript-fetch-lab/issues`).
+  fetch(`https://api.github.com/repos/nicoleeidi/javascript-fetch-lab/issues`).
     then(resp => {
       resp.json().then( data => {
         for (let i = 0; i < data.length; i++){
