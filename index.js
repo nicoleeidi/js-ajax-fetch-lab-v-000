@@ -19,7 +19,7 @@ function showIssue(issue) {
 }
 
 function createIssue() {
-    const token = ' 04ae7bc8f20238e70725123a0916a5951ab1bfe0 ';
+    const token = '04ae7bc8f20238e70725123a0916a5951ab1bfe0';
   const issueTitle = document.getElementById('title').value
   const issueBody = document.getElementById('body').value
   const postData = { title: issueTitle, body: issueBody }
