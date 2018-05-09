@@ -60,7 +60,7 @@ function showForkedRepo(repo) {
 
 
 function getToken() {
-  const token = ' 04ae7bc8f20238e70725123a0916a5951ab1bfe0 ';
+  const token = '04ae7bc8f20238e70725123a0916a5951ab1bfe0';
 
 fetch('https://api.github.com/user/repos', {
   headers: {
