@@ -13,7 +13,7 @@ function getIssues(data) {
 
 function showIssue(issue) {
 element= document.createElement()//what goes here?)
-  $('#issues').append(issue)
+  $('#issues').append(element)
 }
 
 function createIssue() {
