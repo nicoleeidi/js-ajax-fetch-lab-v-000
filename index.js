@@ -11,7 +11,7 @@ function getIssues(data) {
     })
 }
 
-function displayIssue(issue) {
+function showIssue(issue) {
   $('#issues').append(issue.template())
 }
 
