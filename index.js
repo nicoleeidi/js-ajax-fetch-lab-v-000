@@ -9,7 +9,7 @@ function createIssue() {
   const issueTitle = document.getElementById('title').value
   const issueBody = document.getElementById('body').value
   const postData = { title: issueTitle, body: issueBody }
-  fetch(`https://api.github.com/repos/${userName}/javascript-fetch-lab/issues`, {
+  fetch(`https://api.github.com/repos/${userName}/javascript-fetch-lab/issues`, { //define username
     method: 'post',
     headers: {
       'Authorization': `token ${token}`
