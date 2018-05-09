@@ -1,4 +1,3 @@
-const userName = ''
 
 function getIssues(data) {
   fetch(`https://api.github.com/repos/nicoleeidi/javascript-fetch-lab/issues`).
