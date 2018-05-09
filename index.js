@@ -12,7 +12,7 @@ function getIssues(data) {
 }
 
 function showIssue(issue) {
-issue= document.createElement(//what goes here?)
+issue= document.createElement()//what goes here?)
   $('#issues').append(issue)
 }
 
