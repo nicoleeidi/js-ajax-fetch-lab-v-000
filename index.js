@@ -5,7 +5,7 @@ function getIssues(data) {
     then(resp => {
       resp.json().then( data => {
         for (let i = 0; i < data.length; i++){
-          showIssue(new Issue(data[i]));
+          showIssue(   );
         }
       } )
     })
