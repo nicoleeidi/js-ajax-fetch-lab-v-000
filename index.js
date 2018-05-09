@@ -1,7 +1,7 @@
 const userName = ''
 
 function getIssues(data) {
-  fetch(`https://api.github.com/repos/${userName}/javascript-fetch-lab/issues`).
+  fetch(`https://api.github.com/repos/learn-co-curriculum/javascript-fetch-lab/issues`).
     then(resp => {
       resp.json().then( data => {
         for (let i = 0; i < data.length; i++){
@@ -34,7 +34,7 @@ function showResults(json) {
 }
 
 function forkRepo() {
-  
+
     token = ' 04ae7bc8f20238e70725123a0916a5951ab1bfe0 ';
   const repo = 'learn-co-curriculum/javascript-fetch-lab'
   //use fetch to fork it!
