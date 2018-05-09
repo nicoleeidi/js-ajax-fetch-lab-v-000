@@ -22,7 +22,7 @@ element= `<li>title:${issue.title} ,body:${issue.body}</li>`//what goes here?)
 }
 
 function createIssue() {
-    const token = 'f74e4a377e2005a8969df3758de127d0571eee8c';
+    const token = '';
   const issueTitle = document.getElementById('title').value
   const issueBody = document.getElementById('body').value
   const postData = { title: issueTitle, body: issueBody }
@@ -41,7 +41,7 @@ function showResults(json) {
 
 function forkRepo() {
 
-    token = 'f74e4a377e2005a8969df3758de127d0571eee8c';
+    token = '';
   const repo = 'learn-co-curriculum/javascript-fetch-lab'
   //use fetch to fork it!
   fetch(`https://api.github.com/repos/${repo}/forks`, {
@@ -63,7 +63,7 @@ function showForkedRepo(repo) {
 
 
 function getToken() {
-  const token = 'f74e4a377e2005a8969df3758de127d0571eee8c';
+  const token = '';
 
 fetch('https://api.github.com/user/repos', {
   headers: {
