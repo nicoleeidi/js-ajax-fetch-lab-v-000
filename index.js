@@ -1,4 +1,6 @@
+function Issue(attributes){
 
+}
 function getIssues(data) {
   fetch(`https://api.github.com/repos/nicoleeidi/javascript-fetch-lab/issues`).
     then(resp => {
