@@ -14,6 +14,7 @@ function getIssues(data) {
 }
 
 function showIssue(issue) {
+
   $('#issues').append( )
 }
 
