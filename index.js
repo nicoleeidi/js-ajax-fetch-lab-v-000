@@ -47,7 +47,7 @@ function forkRepo() {
   //use fetch to fork it!
   fetch(`https://api.github.com/repos/${repo}/forks`, {
   method: 'POST',
-  
+
   headers: {
     Authorization: `token ${token}`
   }
@@ -84,5 +84,8 @@ fetch('https://api.github.com/repos/:your_ghname/:your_repo/commits/:sha/comment
   headers: {
     Authorization: `token ${token}`
   }
-}).then(res => console.log(res));
+}).then(resp => {
+    let repo = new Repo(resp);
+    showForkedRepo(repo);
+  })
 }
