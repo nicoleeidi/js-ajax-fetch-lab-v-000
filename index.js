@@ -20,8 +20,13 @@ function forkRepo() {
   headers: {
     Authorization: `token ${token}`
   }
-}).then(res => console.log(res));
+}).then(resp => {
+    let repo = new Repo(resp);
+    showForkedRepo(repo);
+  })
 }
+
+
 
 function getToken() {
   const token = ' 04ae7bc8f20238e70725123a0916a5951ab1bfe0 ';
