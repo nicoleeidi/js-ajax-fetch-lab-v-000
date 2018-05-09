@@ -34,7 +34,7 @@ function showResults(json) {
 }
 
 function forkRepo() {
-  https://api.github.com/repos/learn-co-curriculum/javascript-fetch-lab/forks
+  
     token = ' 04ae7bc8f20238e70725123a0916a5951ab1bfe0 ';
   const repo = 'learn-co-curriculum/javascript-fetch-lab'
   //use fetch to fork it!
