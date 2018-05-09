@@ -11,7 +11,7 @@ function createIssue() {
   fetch(`${baseApi}repos/${fork}/issues`, {
     method: 'post',
     headers: {
-      'Authorization': `token ${getToken()}`
+      'Authorization': `token ${token}`
     },
     body: JSON.stringify(postData)
   }).then(resp => getIssues())
