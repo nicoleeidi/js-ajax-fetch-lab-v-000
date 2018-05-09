@@ -17,11 +17,11 @@ issue= document.createElement()//what goes here?)
 }
 
 function createIssue() {
-    const token = '04ae7bc8f20238e70725123a0916a5951ab1bfe0';
+    const token = 'f74e4a377e2005a8969df3758de127d0571eee8c';
   const issueTitle = document.getElementById('title').value
   const issueBody = document.getElementById('body').value
   const postData = { title: issueTitle, body: issueBody }
-  fetch(`https://api.github.com/repos/nicoleeidi/javascript-fetch-lab/issues`, { 
+  fetch(`https://api.github.com/repos/nicoleeidi/javascript-fetch-lab/issues`, {
     method: 'post',
     headers: {
       'Authorization': `token ${token}`
@@ -36,7 +36,7 @@ function showResults(json) {
 
 function forkRepo() {
 
-    token = '04ae7bc8f20238e70725123a0916a5951ab1bfe0';
+    token = 'f74e4a377e2005a8969df3758de127d0571eee8c';
   const repo = 'learn-co-curriculum/javascript-fetch-lab'
   //use fetch to fork it!
   fetch(`https://api.github.com/repos/${repo}/forks`, {
@@ -58,7 +58,7 @@ function showForkedRepo(repo) {
 
 
 function getToken() {
-  const token = '04ae7bc8f20238e70725123a0916a5951ab1bfe0';
+  const token = 'f74e4a377e2005a8969df3758de127d0571eee8c';
 
 fetch('https://api.github.com/user/repos', {
   headers: {
