@@ -1,7 +1,7 @@
 function Issue(attributes){
-  this.title = attributes.title 
+  this.title = attributes.title
   this.body = attributes.body
-  this.url = attributes.url 
+  this.url = attributes.url
 }
 function getIssues(data) {
   fetch(`https://api.github.com/repos/nicoleeidi/javascript-fetch-lab/issues`).
@@ -17,7 +17,7 @@ function getIssues(data) {
 }
 
 function showIssue(issue) {
-element= `<li>title:${issue}.title ,body:${issue}.body</li>`//what goes here?)
+element= `<li>title:${issue.title} ,body:${issue.body}</li>`//what goes here?)
   $('#issues').append(element)
 }
 
