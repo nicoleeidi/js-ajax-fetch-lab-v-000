@@ -60,3 +60,6 @@ function forkRepo() {
 function showForkedRepo(repo) {
   $('#results').append(repo.template())
 }
+function getToken(){
+  return ''
+}
