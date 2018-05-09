@@ -1,3 +1,4 @@
+const username= ''
 function Issue(attributes){
   this.title = attributes.title
   this.body = attributes.body
@@ -26,7 +27,7 @@ function createIssue() {
   const issueTitle = document.getElementById('title').value
   const issueBody = document.getElementById('body').value
   const postData = { title: issueTitle, body: issueBody }
-  fetch(`https://api.github.com/repos/nicoleeidi/javascript-fetch-lab/issues`, {
+  fetch(`https://api.github.com/repos/${username}/javascript-fetch-lab/issues`, {
     method: 'post',
     headers: {
       'Authorization': `token ${token}`
