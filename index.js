@@ -12,7 +12,7 @@ function getIssues(data) {
 }
 
 function showIssue(issue) {
-  $('#issues').append(issue.template())
+  $('#issues').append( )
 }
 
 function createIssue() {
